@@ -6,9 +6,9 @@ module BubbleSort
 	
 	def self.sort(array, should_return = false)
 		n = array.length
+		# from 0 to n-1
 		loop do
 			swapped = false
-	
 			(n-1).times do |i|
 				if array[i] > array[i+1]
 					array[i], array[i+1] = array[i+1], array[i]

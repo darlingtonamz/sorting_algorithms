@@ -3,10 +3,12 @@ require 'json'
 require './bubble_sort'
 require './insertion_sort'
 require './selection_sort'
+require './merge_sort'
 
 include BubbleSort
 include InsertionSort
 include SelectionSort
+include MergeSort
 
 def benchmark(data, m)
 	Benchmark.bm(20) do |bm|  
@@ -25,4 +27,4 @@ def compare modules
 	end
 end
 
-compare([SelectionSort, InsertionSort,  BubbleSort])
+compare([BubbleSort, MergeSort]) #SelectionSort, InsertionSort, ])
