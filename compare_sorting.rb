@@ -27,4 +27,4 @@ def compare modules
 	end
 end
 
-compare([BubbleSort, MergeSort]) #SelectionSort, InsertionSort, ])
+compare([BubbleSort, MergeSort]) # SelectionSort, InsertionSort, ])
